@@ -9,12 +9,17 @@ public class BookTest {
 
     @Before
     public void before(){
-        book1 = new Book("Pride and Prejudice");
+        book1 = new Book("Pride and Prejudice", "Jane Austen");
     }
 
     @Test
     public void hasTitle(){
         assertEquals("Pride and Prejudice", book1.getTitle());
+    }
+
+    @Test
+    public void hasAuthor(){
+        assertEquals("Jane Austen", book1.getAuthor());
     }
 
 }
